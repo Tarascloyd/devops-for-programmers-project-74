@@ -3,7 +3,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.production
+    image: tarascloyd/devops-for-programmers-project-74
     command: npm test
-    volumes:
-      - "./app:/app"
+    
