@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run Test
+      - name: Copy env
         run: cp .env.example .env
 
       - name: Run Test
