@@ -7,6 +7,9 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run Test
+        run: cp .env.example .env
+
+      - name: Run Test
         run: make ci
 
       - name: Login on Dockerhub
